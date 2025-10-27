@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ghumti</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+    <header class="flex">
+        <div class="primary-header">
+            Ghumti
+        </div>
+        <button class="mobile-btn-toggle" aria-expanded="false" aria-controls="primary-navigation">
+        </button>
+        <nav class="mobile-nav">
+            <ul class="primary-navigation flex" data-visible="false">
+                <li><a href="">categories</a></li>
+                <li><a href="">orders</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">login</a></li>
+                <button class="search-btn"></button>
+            </ul>
+        </nav>
+        <nav class="desktop-nav">
+            <ul class="desktop-navigation flex">
+                <button class="search-btn"></button>
+                <li><a href="">categories</a></li>
+                <li><a href="">orders</a></li>
+                <li><a href="">about us</a></li>
+                <li><a href="">login</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <main>
+        <section class="main-primary-offers">
+            <div class="daily-offers">
+                <ul class="offers card margin-inline">
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="categories margin-inline">
+            <ul class="categories-links card">
+                <li><a href="#"><img src="/assets/images/no-image.webp" alt="category"><span>catergory1</span></a></li>
+                <li><a href="#"><img src="/assets/images/no-image.webp" alt="category"><span>catergory2</span></a></li>
+                <li><a href="#"><img src="/assets/images/no-image.webp" alt="category"><span>catergory3</span></a></li>
+                <li><a href="#"><img src="/assets/images/no-image.webp" alt="category"><span>catergory4</span></a></li>
+                <li><a href="#"><img src="/assets/images/no-image.webp" alt="category"><span>catergory5</span></a></li>
+            </ul>
+        </section>
+        <section class="daily-items margin-inline">
+            <h1>everyday items</h1>
+            <ul class="list-items card">
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item1</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item2</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item3</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item4</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item5</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item6</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item7</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item8</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item9</strong><span>price</span></a></li>
+             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item10</strong><span>price</span></a></li>
+            </ul>
+        </section>
+    </main>
+
+
+
+
+
+
+
+
+
+    <script>
+        const primaryNav = document.querySelector('.primary-navigation');
+        const navToggle = document.querySelector('.mobile-btn-toggle');
+
+        navToggle.addEventListener('click', () => {
+            const visibility = primaryNav.getAttribute('data-visible');
+
+            if (visibility === "false") {
+                primaryNav.setAttribute('data-visible', true)
+                navToggle.setAttribute('aria-expanded', true)
+            }
+            else if (visibility === "true") {
+                primaryNav.setAttribute('data-visible', false)
+                navToggle.setAttribute('aria-expanded', false)
+            }
+        })
+    </script>
+</body>
+
+</html>

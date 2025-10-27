@@ -1,0 +1,78 @@
+header{
+    align-items: center;
+    justify-content: space-between;
+}
+.primary-header{
+    font-size: 1.9rem;
+    font-weight: 800;
+    padding-inline:2rem;
+    padding-block: 1.7rem;
+}
+.mobile-btn-toggle{
+    /* text-align: center; */
+    display: block;
+    position: absolute;
+    width: 2rem;
+    aspect-ratio: 1;
+    /* background-color: transparent; */
+    background: url("/assets/icons/hamburger.svg");
+    background-repeat: no-repeat;
+    top: 2rem;
+    right: 2rem;
+    z-index: 9999;
+}
+.search-btn{
+    display: block;
+    width: 2rem;
+    aspect-ratio: 1;
+    background: url("/assets/icons/searchBtn.svg");
+    background-repeat: no-repeat;
+}
+
+/* style links */
+.primary-navigation{
+    display: block;
+    flex-direction: column;
+    font-size: 1.7rem;
+
+    z-index: 1000;
+    transform: translateX(100%);
+    transition: transform 234ms ease-out;
+
+    position: fixed;
+    inset: 0 0 0 60%;
+
+    padding: min(30vh,10rem) 2em;
+}
+.primary-navigation[data-visible="true"]{
+    transform: translateX(0%);
+}
+   .primary-navigation[data-visible="true"] {
+    display: flex; /* show when toggled */
+    flex-direction: column;
+  }
+.mobile-btn-toggle[aria-expanded="true"]{
+ background: url("../assets/icons/close.svg") no-repeat center;
+  background-size: contain;}
+.desktop-nav{
+    display: none;
+}
+
+/* desktop navigation css */
+  .desktop-navigation{
+
+  }
+
+@media(min-width:36em){
+   .mobile-nav{
+    display: none;
+   }
+.desktop-nav{
+    display: block;
+}
+    
+    .mobile-btn-toggle{
+        display: none;
+    }
+
+}
