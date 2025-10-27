@@ -3,6 +3,11 @@
     margin-inline:auto;
 }
 
+.primary-offers{
+height: 300px;
+width: 300px;
+}
+
 .card{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(140px, 1fr));
@@ -11,6 +16,10 @@
     gap: 2rem;
 
 }
+.card li:nth-child(n+5){
+    display: none;
+}
+
 .card li {
   background: #fff;
   border-radius: 0.75rem;
@@ -46,5 +55,9 @@
     font-weight: 300;
 }
 
-
+@media(min-width:36em){
+    .card li:nth-child(n+5){
+        display: block;
+    }
+}
 

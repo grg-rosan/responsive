@@ -1,12 +1,15 @@
 header{
     align-items: center;
     justify-content: space-between;
+    box-shadow: .1rem .1rem .5rem rgba(195, 192, 192, 0.562);
+    background: var(--color-background);
 }
 .primary-header{
     font-size: 1.9rem;
     font-weight: 800;
     padding-inline:2rem;
     padding-block: 1.7rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);;
 }
 .mobile-btn-toggle{
     /* text-align: center; */
@@ -40,11 +43,22 @@ header{
     transition: transform 234ms ease-out;
 
     position: fixed;
-    inset: 0 0 0 60%;
+    inset: 0 0 0 40%;
 
     padding: min(30vh,10rem) 2em;
 }
+.primary-navigation li a{
+    display: block;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+.primary-navigation li a:hover{
+    background-color: red;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
 .primary-navigation[data-visible="true"]{
+    background: hsla(0, 2%, 58%, 0.796);
     transform: translateX(0%);
 }
    .primary-navigation[data-visible="true"] {
@@ -54,14 +68,31 @@ header{
 .mobile-btn-toggle[aria-expanded="true"]{
  background: url("../assets/icons/close.svg") no-repeat center;
   background-size: contain;}
+
+
+
+
+/* display nav when it reaches breakpoint */
 .desktop-nav{
     display: none;
 }
-
 /* desktop navigation css */
   .desktop-navigation{
 
   }
+
+.desktop-navigation li a{
+    display: block;
+  transition: all 0.3s ease, box-shadow 0.3s ease;
+}
+.desktop-navigation li a:hover{
+    background-color: red;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+
+
+
 
 @media(min-width:36em){
    .mobile-nav{
