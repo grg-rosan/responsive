@@ -2,12 +2,14 @@
     max-width: 90vw;
     margin-inline:auto;
 }
-
 .primary-offers{
-height: 300px;
-width: 300px;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
 }
-
+.pri-off__cards{
+  width: ;  
+}
 .card{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(140px, 1fr));

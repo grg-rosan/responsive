@@ -19,19 +19,36 @@
         </button>
         <nav class="mobile-nav">
             <ul class="primary-navigation flex" data-visible="false">
-                <button class="search-btn"></button>
+                <li><button class="search-btn"></button></li>
                 <li><a href="">Categories</a></li>
                 <li><a href="">Orders</a></li>
                 <li><a href="">About us</a></li>
                 <li><a href="">Login</a></li>
             </ul>
         </nav>
-        <nav class="desktop-nav">
-            <ul class="desktop-navigation flex">
+        <nav class="desktop-nav ">
+            <div class="search-input flex">
+                <input type="text" name="search" id="search">
                 <button class="search-btn"></button>
-                <li><a href="">categories</a></li>
-                <li><a href="">orders</a></li>
-                <li><a href="">about us</a></li>
+            </div>
+            <ul class="desktop-navigation flex">
+                <li class="tooltip">
+                    <a href="#" class="dropbtn">categories</a>
+                    <ul class="dropdown-menu">
+                        <li class="tooltip-text"><a href="#">item1</a></li>
+                        <li class="tooltip-text"><a href="#">item2</a></li>
+                        <li class="tooltip-text"><a href="#">item3</a></li>
+                    </ul>
+
+                </li>
+                <li class="tooltip">
+                    <a href="">orders</a>
+                    <ul class="dropdown-menu">
+                        <li class="tooltip-text"><a href="#">item1</a></li>
+                        <li class="tooltip-text"><a href="#">item2</a></li>
+                    </ul>
+                </li>
+                <li class="tooltip"><a href="">about us</a></li>
                 <li><a href="">login</a></li>
             </ul>
         </nav>
@@ -40,24 +57,35 @@
 
     <main>
         <section class="main-primary-offers">
-            <div class="primary-offers margin-inline>
-                <a href="">
-                    <img src="" alt="">
-                    <span>offers</span>
-                    </img>
-                </a>
-        </div>
-            <div class="daily-offers">
-             <ul class="offers card margin-inline">
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+            <div class="primary-offers margin-inline">
+                <div class="pri-off__cards">
+                    <a href="#"><img src="/assets/images/no-image.webp" alt=""></img></a></div>
+                <div class="pri-off__cards">
+                    <a href="#"><img src="/assets/images/no-image.webp" alt=""></img></a></div>
+                <div class="pri-off__cards">
+                    <a href="#"><img src="/assets/images/no-image.webp" alt=""></img></a></div>
+
+            </div>
+            <div class=" daily-offers">
+                <ul class="offers card margin-inline">
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
+                    <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                                alt="productImg" /><strong>item3</strong><span>price</span></a></li>
                 </ul>
             </div>
         </section>
@@ -73,16 +101,26 @@
         <section class="daily-items margin-inline">
             <h1>everyday items</h1>
             <ul class="list-items card">
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item1</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item2</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item3</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item4</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item5</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item6</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item7</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item8</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item9</strong><span>price</span></a></li>
-             <li><a href="#"><img src="/assets/images/productImg.jpeg" alt="productImg"><strong>item10</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item1</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item2</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item3</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item4</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item5</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item6</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item7</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item8</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item9</strong><span>price</span></a></li>
+                <li><a href="#"><img src="/assets/images/productImg.jpeg"
+                            alt="productImg"><strong>item10</strong><span>price</span></a></li>
             </ul>
         </section>
     </main>
