@@ -67,9 +67,12 @@ html:focus-within {
 /* Set root font size for responsive rem usage */
 :root {
   font-size: 62.5%;
-  --color-background:#f8f7ff;
+  --clr-primary__background:#f8f7ff;
   --color-buttons:#9381ff;
   --color-items:#b8b8ff;
+  --clr-secondary__background:hsl(193, 40%, 65%, 0.359);
+  --clr--hover:hsla(201, 68%, 68%, 0.714);
+  --clr--secondary__hover:hsla(201, 52%, 56%, 0.745);
 
 }
 

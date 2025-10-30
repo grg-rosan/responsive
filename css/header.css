@@ -2,26 +2,24 @@ header {
     align-items: center;
     justify-content: space-between;
     box-shadow: .1rem .1rem .5rem rgba(195, 192, 192, 0.562);
-    background: var(--color-background);
+    background: var(--clr-secondary__background);
     padding-inline: 2rem;
 }
 
 .primary-header {
-    font-size: 1.9rem;
+    font-size: 2.3rem;
     font-weight: 800;
-    padding-inline: 2rem;
+    padding-inline: 1.6rem;
     padding-block: 1.7rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    text-shadow: 2px 2px 4px rgba(74, 72, 72, 0.2);
     ;
 }
 
 .mobile-btn-toggle {
-    /* text-align: center; */
     display: block;
     position: absolute;
     width: 2rem;
     aspect-ratio: 1;
-    /* background-color: transparent; */
     background: url("/assets/icons/hamburger.svg");
     background-repeat: no-repeat;
     top: 2rem;
@@ -41,8 +39,8 @@ header {
 .primary-navigation {
     display: block;
     flex-direction: column;
+    gap: 1.8rem;
     font-size: 1.7rem;
-
     z-index: 1000;
     transform: translateX(100%);
     transition: transform 234ms ease-out;
@@ -53,26 +51,17 @@ header {
     padding: min(30vh, 10rem) 2em;
 }
 
-.primary-navigation li a {
+.primary-navigation div a {
     display: block;
-    transition: all 0.3s ease, box-shadow 0.3s ease;
+    padding: .2rem .5rem;
 }
-
-.primary-navigation li a:hover {
-    background-color: red;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
 .primary-navigation[data-visible="true"] {
-    background: hsla(0, 2%, 58%, 0.796);
+    background: var(--clr-primary__background);
     transform: translateX(0%);
 }
 
 .primary-navigation[data-visible="true"] {
     display: flex;
-    /* show when toggled */
-    flex-direction: column;
 }
 
 .mobile-btn-toggle[aria-expanded="true"] {
@@ -85,13 +74,11 @@ header {
 
 /* display nav when it reaches breakpoint */
 .desktop-nav {
+    width: max-content;
     display: none;
-    gap: 2rem;
-
+    align-items: center;
+    gap: 1.8rem;
 }
-
-
-
 /* desktop navigation css */
 .desktop-navigation {
     justify-content: flex-end;
@@ -107,7 +94,7 @@ header {
     border: 1px solid #ccc;
     border-radius: 2rem;
     padding: 0.6rem 1rem;
-    min-width: 14ch;
+    min-width: 1ch;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -140,16 +127,17 @@ header {
     background: transparent;
 }
 
-.desktop-navigation li a {
+.desktop-navigation div a {
     display: block;
     padding: .6rem .8rem;
     border-radius: .7rem;
     transition: all 0.3s ease, box-shadow 0.3s ease;
 }
 
-.desktop-navigation li a:hover {
-    background-color: rgba(201, 198, 198, 0.707);
-    transform: scale(1.1);
+.desktop-navigation div a:hover {
+
+    background-color:var(--clr-hover);
+    transform: scale(1.01);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -157,7 +145,6 @@ header {
 .tooltip {
     position: relative;
 }
-
 .dropdown-menu {
     display: none;
     position: absolute;
@@ -167,17 +154,15 @@ header {
     margin: 0;
     padding: .6rem 0;
 }
-
 .tooltip:hover .dropdown-menu {
     display: inline-block;
     padding: 1.2rem;
     gap: 1.5rem;
     border-radius: 2rem;
-    background-color: hsla(0, 4%, 69%, 0.505);
+    background-color: var(--clr--secondary__hover);
     min-width: 20rem;
     aspect-ratio: 16/9;
 }
-
 .dropdown-menu::before {
     content: "";
     position: absolute;
@@ -189,15 +174,13 @@ header {
     border-style: solid;
     border-color: transparent transparent hsla(0, 5%, 34%, 0.95) transparent;
 }
-
-.dropdown-menu li a {
+.dropdown-menu div a {
     color: #333;
     display: block;
     padding: 0.7rem 1rem;
     transition: background-color 0.2s;
 }
-
-.dropdown-menu li a:hover {
+.dropdown-menu div a:hover {
     background-color: #f2f2f2;
 }
 
